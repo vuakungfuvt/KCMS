@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RMu-MG-VhO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="MXg-iL-p7M">
+            <objects>
+                <viewController storyboardIdentifier="menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bpa-4V-cjO" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BXv-Fe-IxI"/>
+                        <viewControllerLayoutGuide type="bottom" id="8xJ-p9-CZC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CeT-pY-icQ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcQ-1h-ddf">
+                                <rect key="frame" x="417" y="219" width="67" height="30"/>
+                                <state key="normal" title="Receiving">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Receiving_TouchUp_Inside:" destination="bpa-4V-cjO" eventType="touchUpInside" id="bzo-kT-TS5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oV6-qy-Ul0">
+                                <rect key="frame" x="417" y="319" width="59" height="30"/>
+                                <state key="normal" title="Washing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Washing_TouchUp_Inside:" destination="bpa-4V-cjO" eventType="touchUpInside" id="zSF-4R-Wzj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x50-ac-xCO">
+                                <rect key="frame" x="417" y="372" width="96" height="30"/>
+                                <state key="normal" title="Pallet Change">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Changing_TouchUp_Inside:" destination="bpa-4V-cjO" eventType="touchUpInside" id="m7J-ey-8Jo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGf-z8-oxP">
+                                <rect key="frame" x="417" y="270" width="72" height="30"/>
+                                <state key="normal" title="Packaging">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Packaging_TouchUp_Inside:" destination="bpa-4V-cjO" eventType="touchUpInside" id="i5G-l8-q3f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="btn_Menu_Changing" destination="x50-ac-xCO" id="6Mo-cW-UT3"/>
+                        <outlet property="btn_Menu_Packaging" destination="eGf-z8-oxP" id="aAi-YL-x6i"/>
+                        <outlet property="btn_Menu_Receiving" destination="zcQ-1h-ddf" id="J5P-k3-UIm"/>
+                        <outlet property="btn_Menu_Washing" destination="oV6-qy-Ul0" id="SLG-ot-N3a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDB-yI-qNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="326"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYn-8x-9sU">
+                                <rect key="frame" x="202" y="279" width="196" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Start_TouchUp_Inside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRr-KA-cSW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menu" id="0fd-IX-ths"/>
+                    <connections>
+                        <outlet property="btn_Start" destination="WYn-8x-9sU" id="Ipv-SZ-YaS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207" y="440"/>
+        </scene>
+        <!--Receiving View Controller-->
+        <scene sceneID="yhN-hZ-3xv">
+            <objects>
+                <viewController storyboardIdentifier="receiving" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V2Q-YI-AOw" customClass="ReceivingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Bc-0g-9zt"/>
+                        <viewControllerLayoutGuide type="bottom" id="MXr-xf-Z6N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9iR-ic-pdH">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8si-Ya-dVP">
+                                <rect key="frame" x="58" y="82" width="150" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Success:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6V-1C-BPU">
+                                <rect key="frame" x="105" y="161" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ZZ9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRR-zc-rC1">
+                                <rect key="frame" x="234" y="161" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYT-Za-t3s">
+                                <rect key="frame" x="522" y="161" width="27" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ZZ9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvl-GR-tjo">
+                                <rect key="frame" x="574" y="161" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0Y-un-PQ3">
+                                <rect key="frame" x="650" y="85" width="97" height="30"/>
+                                <state key="normal" title="Device Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Scan_Device_TouchUp_Inside:" destination="V2Q-YI-AOw" eventType="touchUpInside" id="I5p-D9-5s5"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WJE-AR-mlD">
+                                <rect key="frame" x="21" y="253" width="712" height="732"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="btn_Device_Scan" destination="f0Y-un-PQ3" id="gkU-tr-S5a"/>
+                        <outlet property="lbl_Fail" destination="ZYT-Za-t3s" id="Nkz-xP-ITN"/>
+                        <outlet property="lbl_Success" destination="F6V-1C-BPU" id="gJT-4T-oeQ"/>
+                        <outlet property="lbl_number_Fail" destination="Xvl-GR-tjo" id="HZC-rO-N1q"/>
+                        <outlet property="lbl_number_Success" destination="WRR-zc-rC1" id="VVw-ti-MRR"/>
+                        <outlet property="tbl_Receiving" destination="WJE-AR-mlD" id="F4G-FI-urA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIB-KO-oqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-482" y="1414"/>
+        </scene>
+        <!--ChangingViewController-->
+        <scene sceneID="Wo1-Wq-dzc">
+            <objects>
+                <viewController storyboardIdentifier="changing" title="ChangingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BgB-yc-Eam" customClass="ChangingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="25a-ut-J3x"/>
+                        <viewControllerLayoutGuide type="bottom" id="meg-6R-FNp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DDf-Fs-kFk">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r19-lq-Oy3">
+                                <rect key="frame" x="316" y="91" width="136" height="30"/>
+                                <state key="normal" title="button scan original">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_OriginalScan_TouchUp_Inside:" destination="BgB-yc-Eam" eventType="touchUpInside" id="SFg-dU-QQs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfT-79-P7T">
+                                <rect key="frame" x="306" y="455" width="156" height="30"/>
+                                <state key="normal" title="button scan new pallet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_NewScan_TouchUp_Inside:" destination="BgB-yc-Eam" eventType="touchUpInside" id="2MU-l4-KG5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="original Pallet Tag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1h-2f-NX6">
+                                <rect key="frame" x="317" y="168" width="135" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="orignal Pallet Serial 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jba-q4-ncn">
+                                <rect key="frame" x="303" y="302" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="orignal Pallet Serial 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7F2-iS-TTA">
+                                <rect key="frame" x="303" y="351" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="new Pallet Tag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWK-dH-ufR">
+                                <rect key="frame" x="317" y="679" width="135" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="new Pallet Serial 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTK-T9-0lx">
+                                <rect key="frame" x="303" y="809" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="new Pallet Serial 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WR-B0-RbI">
+                                <rect key="frame" x="303" y="858" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWK-6y-dJ0">
+                                <rect key="frame" x="619" y="91" width="86" height="30"/>
+                                <state key="normal" title="Device Scan">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Scan_Device_TouchUp_Inside:" destination="BgB-yc-Eam" eventType="touchUpInside" id="iSg-TP-CfZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQ2-2R-vjs">
+                                <rect key="frame" x="357" y="911" width="54" height="45"/>
+                                <state key="normal" title="Cofirm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Confirm_TouchUp_Inside:" destination="BgB-yc-Eam" eventType="touchUpInside" id="OdU-zi-NH7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="btn_Confirm_Changing" destination="qQ2-2R-vjs" id="z0w-RB-Grd"/>
+                        <outlet property="btn_New_Scan" destination="MfT-79-P7T" id="yR5-cj-DtA"/>
+                        <outlet property="btn_Original_Scan" destination="r19-lq-Oy3" id="f9j-Ub-09K"/>
+                        <outlet property="btn_Scan_Device" destination="SWK-6y-dJ0" id="lxA-2I-2WM"/>
+                        <outlet property="lbl_New_Tag_Pallet" destination="qWK-dH-ufR" id="bBN-C9-Ojt"/>
+                        <outlet property="lbl_New_Tag_Serial1" destination="hTK-T9-0lx" id="FQi-JM-Yi8"/>
+                        <outlet property="lbl_New_Tag_Serial2" destination="2WR-B0-RbI" id="xtq-Ng-MnV"/>
+                        <outlet property="lbl_Original_Tag_Pallet" destination="G1h-2f-NX6" id="Rdz-SK-TAW"/>
+                        <outlet property="lbl_Original_Tag_Serial1" destination="jba-q4-ncn" id="UFr-ye-FiU"/>
+                        <outlet property="lbl_Original_Tag_Serial2" destination="7F2-iS-TTA" id="VPI-th-nvj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSd-hp-hFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-550" y="2487"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Ya-HS-px0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RMu-MG-VhO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s0u-kp-n7W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2JM-lO-3KP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERB-gu-wA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="844"/>
+        </scene>
+        <!--washing-->
+        <scene sceneID="fHh-nS-mhW">
+            <objects>
+                <viewController storyboardIdentifier="washing" title="washing" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yp1-v4-EET" customClass="WashingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y6m-kP-kPI"/>
+                        <viewControllerLayoutGuide type="bottom" id="kua-nM-JdE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TsO-4r-gwU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11V-Sa-RfT">
+                                <rect key="frame" x="254" y="151" width="260" height="200"/>
+                                <state key="normal" title="Scan">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Scan_TouchUpInside:" destination="Yp1-v4-EET" eventType="touchUpInside" id="xN4-QD-X8u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pallet Tag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpQ-jz-oBn">
+                                <rect key="frame" x="347" y="614" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pallet Serial 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-9P-zZi">
+                                <rect key="frame" x="332" y="672" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pallet Serial 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDn-pP-Blh">
+                                <rect key="frame" x="332" y="728" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="get-dB-7rN">
+                                <rect key="frame" x="357" y="876" width="55" height="30"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Confirm_TouchUp_Inside:" destination="Yp1-v4-EET" eventType="touchUpInside" id="pg6-tC-JSM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flb-rk-Hdq">
+                                <rect key="frame" x="596" y="94" width="97" height="30"/>
+                                <state key="normal" title="Button Device">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Device_TouchUp_Inside:" destination="Yp1-v4-EET" eventType="touchUpInside" id="ckF-mS-TC5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <outlet property="btn_Confirm_Washing" destination="get-dB-7rN" id="VCx-SZ-mKD"/>
+                        <outlet property="btn_Device" destination="flb-rk-Hdq" id="7AA-kQ-0Ki"/>
+                        <outlet property="btn_ScanWashing" destination="11V-Sa-RfT" id="vNS-1h-0Cl"/>
+                        <outlet property="lbl_Tag_Pallet" destination="kpQ-jz-oBn" id="Sbc-Xy-00P"/>
+                        <outlet property="lbl_Tag_Serial1" destination="HOI-9P-zZi" id="knu-6c-Tpj"/>
+                        <outlet property="lbl_Tag_Serial2" destination="mDn-pP-Blh" id="wkj-Xo-WxV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="81p-so-FMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="2062"/>
+        </scene>
+        <!--Packaging-->
+        <scene sceneID="y1W-VT-enE">
+            <objects>
+                <viewController storyboardIdentifier="packaging" title="Packaging" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qgA-E9-8Ym" customClass="PackagingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hxl-4R-5ro"/>
+                        <viewControllerLayoutGuide type="bottom" id="aWM-Rh-ztP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cCR-wd-Pj0">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pallet List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTT-wb-IgR">
+                                <rect key="frame" x="112" y="72" width="196" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Packaging" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-et-Wuw">
+                                <rect key="frame" x="447" y="94" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="km1-xx-20N">
+                                <rect key="frame" x="406" y="135" width="253" height="42"/>
+                                <state key="normal" title="Scan Barcode">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Scan_Barcode_TouchUp_Inside:" destination="qgA-E9-8Ym" eventType="touchUpInside" id="4oy-Ut-2BL"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gqs-hl-f0g">
+                                <rect key="frame" x="43" y="230" width="290" height="763"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fht-rI-Lwa">
+                                <rect key="frame" x="43" y="147" width="320" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sankyu Pallet Barcode Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIU-DO-UVm">
+                                <rect key="frame" x="416" y="194" width="283" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ad-Og-MaS">
+                                <rect key="frame" x="389" y="935" width="352" height="53"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Confirm_TouchUp_inside:" destination="qgA-E9-8Ym" eventType="touchUpInside" id="eJU-Jl-V01"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDq-vd-jrg">
+                                <rect key="frame" x="509" y="429" width="86" height="30"/>
+                                <state key="normal" title="Pallet IC Tag">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tag1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qF-Z3-qMD">
+                                <rect key="frame" x="389" y="706" width="345" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tag2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zz9-oH-EWM">
+                                <rect key="frame" x="389" y="771" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a Barcode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0k-bo-ld8">
+                                <rect key="frame" x="406" y="301" width="335" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFl-RJ-MFj">
+                                <rect key="frame" x="673" y="94" width="86" height="30"/>
+                                <state key="normal" title="Scan Device">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Device_Scan_TouchUp_Inside:" destination="qgA-E9-8Ym" eventType="touchUpInside" id="Rb5-iU-nps"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="btn_Confirm_Packaging" destination="4Ad-Og-MaS" id="C7V-Eh-2kx"/>
+                        <outlet property="btn_Pallet_IC" destination="pDq-vd-jrg" id="gko-Ta-O6l"/>
+                        <outlet property="btn_Scan_Barcode" destination="km1-xx-20N" id="snb-xL-knN"/>
+                        <outlet property="btn_Scan_Device" destination="DFl-RJ-MFj" id="eyQ-EL-1Av"/>
+                        <outlet property="lbl_Barcode" destination="C0k-bo-ld8" id="I0v-v7-DVL"/>
+                        <outlet property="lbl_Packaging" destination="XeC-et-Wuw" id="JLx-9j-os2"/>
+                        <outlet property="lbl_Pallet_List" destination="KTT-wb-IgR" id="BTH-nm-a0E"/>
+                        <outlet property="lbl_Pallet_Tag1" destination="2qF-Z3-qMD" id="gLg-en-f49"/>
+                        <outlet property="lbl_Pallet_Tag2" destination="Zz9-oH-EWM" id="p8u-ft-32n"/>
+                        <outlet property="lbl_Sankyu_Barcode" destination="LIU-DO-UVm" id="k1j-zy-REl"/>
+                        <outlet property="tbl_List_Barcode" destination="gqs-hl-f0g" id="AQA-e6-1fX"/>
+                        <outlet property="txf_search_Pallet" destination="Fht-rI-Lwa" id="XLw-35-7Hh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMJ-YS-bjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="1414"/>
+        </scene>
+    </scenes>
+</document>
